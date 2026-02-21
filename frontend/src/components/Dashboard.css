@@ -1,0 +1,40 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg,#5f6cff,#7b61ff,#00bfa6);
+  color: white;
+  font-family: system-ui;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.card{
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(12px);
+  padding:22px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card h3{
+  font-size:15px;
+}
+
+.card h2{
+  font-size:28px;
+  margin-top:10px;
+}
+
+.graphBox{
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(12px);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
