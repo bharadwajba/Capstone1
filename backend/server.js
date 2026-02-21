@@ -167,7 +167,7 @@ app.get("/auth/google/callback",
       { expiresIn: "1h" }
     );
 
-    res.redirect(`http://localhost:3000/oauth-success?token=${token}`);
+    res.redirect(`${process.env.FRONTEND_URL}/oauth-success?token=${token}`);
   }
 );
 
